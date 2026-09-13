@@ -1,0 +1,12 @@
+{
+  "auth0": {
+    "domain": "dev-ktorvhwabg24xrv2.ca.auth0.com",
+    "client_id": "mIrvVsF4Q6lczXSiEdPTJCCTRkPj1vSc",
+    "client_secret": "jq0ejJjsN-X7_TvQtQaWJqPphBIcQWVVKy7ISjkM5Ie-xblEGVZ_TZkjJNzopitK",
+    "audience": "http://localhost:3000"    ,
+    "callback_url": "http://localhost:3000/call"
+  },
+  "session": {
+    "password": "813e826ba6c0bfa5bfc8ca0ec6949ef750ac0a8a159648a00841ee722b653f3e"
+  }
+}

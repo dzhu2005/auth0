@@ -24,4 +24,4 @@ logs
 !.env.example
 
 # Local secrets config (AWS Secrets Manager fallback for local dev)
-configurations.local.json
+# configurations.local.json
