@@ -11,6 +11,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@auth0/auth0-nuxt": "^1.2.0",
     "@aws-sdk/client-secrets-manager": "^3.1131.0",
     "@iconify-json/lucide": "^1.2.129",
     "@iconify-json/simple-icons": "^1.2.94",
