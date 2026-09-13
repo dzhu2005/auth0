@@ -3,9 +3,12 @@
  *
  * Secret values (client secrets, session password, ...) are masked before
  * leaving the server — `useAppConfiguration()` can hold real credentials
- * and must never be sent to the client as-is.
+ * and must never be sent to the client as-is. Restricted to users carrying
+ * the `admin` role since it exposes tenant/domain/audience details.
  */
-export default defineEventHandler(async (): Promise<SafeAppConfiguration> => {
+export default defineEventHandler(async (event): Promise<SafeAppConfiguration> => {
+  await requireRole(event, 'admin')
+
   const config = await useAppConfiguration()
 
   return {
